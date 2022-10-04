@@ -6,8 +6,8 @@
 
 ## Author
 
-- Badrinarayanan Raghunathan Srikumar
-- Shelvin Pauly
+- Badrinarayanan Raghunathan Srikumar (driver 1)
+- Shelvin Pauly (navigator 1)
 
 ## Overview
 

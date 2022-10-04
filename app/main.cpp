@@ -39,6 +39,7 @@ int main() {
   PID pid(1, 1, 1, 0.05, 10, -10);
   double setpoint = 5;
   double process_var = 1;
+  /// Process variable is calculated multiple times till it reaches the setpoint
   for (int i = 0; i < 500; i++) {
     process_var = pid.compute(setpoint, process_var);
     cout << "Output = " << process_var << endl;
