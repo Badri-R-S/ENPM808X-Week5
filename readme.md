@@ -37,6 +37,10 @@ make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
+## UML Diagram
+
+![ENPM808X-Week5]/UML/UML808X.jpeg
+
 ## Working with Eclipse IDE ##
 
 ## Installation
