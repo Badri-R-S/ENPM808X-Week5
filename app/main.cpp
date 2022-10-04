@@ -10,7 +10,7 @@
  *
  */
 
-/// Necessary header files were added
+// Necessary header files were added
 
 #include <cstdlib>
 #include <iostream>
