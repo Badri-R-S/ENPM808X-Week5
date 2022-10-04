@@ -3,6 +3,12 @@
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
 
+
+## Author
+
+- Badrinarayanan Raghunathan Srikumar
+- Shelvin Pauly
+
 ## Overview
 
 Simple starter C++ project with:
