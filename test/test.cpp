@@ -26,7 +26,7 @@ TEST(testingforki, TestFail)
  /// Unit test to check if the Derivative constant is in the range
  TEST(testingforkd, TestFail)
  {
-     PID pid(1, 1, 1, 0.05, 10, -10);
+     PID pid(1, 1, 2, 0.05, 10, -10);
      EXPECT_FALSE(IsBetweenmaxmin(pid.getKd(), Kdmin, Kdmax));
  }
  /// Unit test to check if dt is in the range
