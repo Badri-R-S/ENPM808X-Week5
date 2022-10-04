@@ -14,7 +14,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "pid.hpp"
+#include "../include/pid.hpp"
 
 
 
@@ -27,20 +27,13 @@ using std::endl;
 
 /// Main function
 int main() {
-  double kp, ki, kd, t, maximum, minimum;
-  kp = 1;
-  ki = 1;
-  kd = 1;
-  t = -1;
-  maximum = 10;
-  minimum = -10;
   /// Constructor is called
   /// Process variable is calculated and printed by calling the compute method
-  PID pid(1, 1, 1, 0.05, 10, -10);
+  PID pid(0.5, 1, 0.01, 0.05, 10, -10);
   double setpoint = 5;
   double process_var = 1;
   /// Process variable is calculated multiple times till it reaches the setpoint
-  for (int i = 0; i < 500; i++) {
+  for (int i = 0; i < 150; i++) {
     process_var = pid.compute(setpoint, process_var);
     cout << "Output = " << process_var << endl;
   }

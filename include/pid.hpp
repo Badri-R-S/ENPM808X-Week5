@@ -10,7 +10,6 @@
  * 
  */
 
-
 #ifndef INCLUDE_PID_HPP_
 #define INCLUDE_PID_HPP_
 /// Specific set of maximum and minimum values were defined for proprotional
@@ -34,6 +33,8 @@ class PID {
   double dt;
   double max;
   double min;
+  double KiError;
+  double prev_error = 0;
   /// A constructor that is used to define initial values for the above
   /// variables
  public:
