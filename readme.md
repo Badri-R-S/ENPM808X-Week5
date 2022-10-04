@@ -39,7 +39,9 @@ This generates a index.html page in the build/coverage sub-directory that can be
 
 ## UML Diagram
 
-![ENPM808X-Week5]/UML/UML808X.jpeg
+<p align="center">
+<img src="UML/UML808X.jpeg"/>
+</p>
 
 ## Working with Eclipse IDE ##
 
