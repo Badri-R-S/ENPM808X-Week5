@@ -2,12 +2,12 @@
  * @file pid.hpp
  * @author Driver : Badrinarayanan Raghunathan Srikumar
            Navigator : Shelvin Pauly
- * @brief  Header file that has class and member definitions 
+ * @brief  Header file that has class and member definitions
  * @version 0.1
  * @date 2022-10-04
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 
 #ifndef INCLUDE_PID_HPP_

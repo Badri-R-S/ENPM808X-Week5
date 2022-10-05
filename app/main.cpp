@@ -14,16 +14,13 @@
 
 #include <cstdlib>
 #include <iostream>
+
 #include "../include/pid.hpp"
-
-
 
 // Necessary namespace identifiers are includes
 using std::cin;
 using std::cout;
 using std::endl;
-
-
 
 /// Main function
 int main() {

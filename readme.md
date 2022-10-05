@@ -1,13 +1,17 @@
 # C++ Boilerplate
 [![Build Status](https://app.travis-ci.com/Irdab2000/ENPM808X-Week5.svg?branch=master)](https://app.travis-ci.com/Irdab2000/ENPM808X-Week5)
-[![Coverage Status](https://coveralls.io/repos/github/Irdab2000/ENPM808X-Week5/badge.svg?branch=master)](https://coveralls.io/github/Irdab2000/ENPM808X-Week5?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Irdab2000/ENPM808X-Week5/badge.svg)](https://coveralls.io/github/Irdab2000/ENPM808X-Week5)
 ---
 
 
 ## Author
 
-- Badrinarayanan Raghunathan Srikumar (driver 1)
-- Shelvin Pauly (navigator 1)
+- Badrinarayanan Raghunathan Srikumar (driver 1, navigator 2)
+- Shelvin Pauly (navigator 1, driver 2)
+
+- Mahima Arora (driver 1, navigatot 2)
+- Harika Pendli (navigator 1, driver 2)
+
 
 ## Overview
 
@@ -37,11 +41,40 @@ make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
-## UML Diagram
+## UML Diagram 
 
 <p align="center">
 <img src="UML/UML808X.jpeg"/>
 </p>
+
+## UML Diagram-part2
+
+<p align="center">
+<img src="UML/UML_Part2.jpeg"/>
+</p>
+
+## Design review and suggestions
+
+ A design review was done for the code by authors of Part 1
+
+Changes:
+
+->Added private member to class - prevError to store previous error to implement derivative controller.
+
+Suggestions
+
+->File was not formatted with Cpplint and CppCheck
+A design review was done for the code by authors of Part 2
+
+Changes
+
+->Added two new private attributes - KiError and prev_erorr. KiError was to accumulate the integral error. prev_error was used to store the output of the previous state to be used to calculate derivative error.
+
+->Modified test case for the function that computes the controller output.
+
+Suggestions
+
+->Styling for code was not according to Google C++ Style.
 
 ## Working with Eclipse IDE ##
 
