@@ -18,8 +18,8 @@
 /// small. Hence a maxx value for dt was set as tmax.
 const double Kpmax = 1;
 const double Kpmin = -1;
-const double Kimax = 0.1;
-const double Kimin = -0.1;
+const double Kimax = 1;
+const double Kimin = -1;
 const double Kdmax = 1;
 const double Kdmin = -1;
 const double tmax = 0.05;
