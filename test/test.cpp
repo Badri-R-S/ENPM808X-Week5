@@ -10,10 +10,7 @@
  * 
  */
 
-
-
-
-/// Necessary header files added
+// Necessary header files added
 #include <gtest/gtest.h>
 #include <iostream>
 #include "../include/pid.hpp"
