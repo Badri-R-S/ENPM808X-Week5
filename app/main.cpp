@@ -18,7 +18,7 @@
 
 
 
-/// Necessary namespace identifiers are includes
+// Necessary namespace identifiers are includes
 using std::cin;
 using std::cout;
 using std::endl;
