@@ -14,8 +14,19 @@
 /// Necessary header files added
 #include "../include/pid.hpp"
 #include <iostream>
+#include <iterator>
 
-/// Constructor
+/**
+ * @brief Constructor for PID class
+ * 
+ * @param p proportional gain
+ * @param i integral gain
+ * @param d differential gain
+ * @param t time interval 
+ * @param ma maximum permissible value for p,i,d
+ * @param mi minimum permissible value for p,i,d
+ */
+
 PID::PID(double p, double i, double d, double t, double ma, double mi) {
     Kp = p;
     Ki = i;
@@ -23,27 +34,58 @@ PID::PID(double p, double i, double d, double t, double ma, double mi) {
     dt = t;
     max = ma;
     min = mi;
+    KiError = 0;
+    prev_error = 0;
   }
-/// Compute method that computes the process variable using error constants
+
+/**
+ * @brief Computes the process variable using error constants
+ * 
+ * @param sp set point is the target value of the process variable
+ * @param pv current state of the process variable
+ * @return double 
+ */
 double PID:: compute(double sp, double pv) {
-/// Takes in the set point and process variable and calculates the error
-/// using each constant and also computes the new value of the process
-/// variable
-return 5;
+double Error, KdError;
+Error = sp - pv;
+KdError = Error-prev_error;
+KiError = KiError + Error;
+double Newpv;
+Newpv = Kp*Error + Kd*KdError/dt + Ki*KiError*dt;
+prev_error = Error;
+return Newpv;
 }
-/// Funtion to return Proportional constant
+
+/**
+ * @brief Get the Kp object (proportional constant)
+ * 
+ * @return double 
+ */
 double PID:: getKp() {
 return Kp;
 }
-/// Function to return Integral constant
+/**
+ * @brief Get the Ki object (Integral constant)
+ * 
+ * @return double 
+ */
 double PID:: getKi() {
 return Ki;
 }
-/// Function to return Derivative constant
+
+/**
+ * @brief Get the Kd object (Derivative constant)
+ * 
+ * @return double 
+ */
 double PID:: getKd() {
 return Kd;
 }
-/// Function to return time interval
+/**
+ * @brief Function to return time interval
+ * 
+ * @return double 
+ */
 double PID:: getdt() {
 return dt;
 }
